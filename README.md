@@ -1,4 +1,4 @@
-## This is a react loader based on html-loader with some additional features
+## This is a webpack loader based on html-loader with some additional features
 usage:
 ```html
 <div class="header">
