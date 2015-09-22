@@ -1,8 +1,8 @@
 {
-  "name": "html-loader",
+  "name": "template-html-loader",
   "version": "0.3.0",
-  "author": "Tobias Koppers @sokra",
-  "description": "html loader module for webpack",
+  "author": "Daniel @hujiang.com",
+  "description": "html loader module for webpack with additional fetures",
   "dependencies": {
     "html-minifier": "^0.7.2",
     "source-map": "0.1.x",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:webpack/html-loader.git"
+    "url": "git@github.com:Hujiang-FE/html-loader.git"
   },
   "licenses": [
     {

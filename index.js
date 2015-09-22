@@ -7,13 +7,16 @@ var attrParse = require("./lib/attributesParser");
 var SourceNode = require("source-map").SourceNode;
 var loaderUtils = require("loader-utils");
 var url = require("url");
+var preprocessNestedHtml = require("./lib/htmlPreprocessor");
 
 function randomIdent() {
 	return "xxxHTMLLINKxxx" + Math.random() + Math.random() + "xxx";
 };
 
-
 module.exports = function(content) {
+	//preprocess html with nested html file link.
+	content = preprocessNestedHtml(content, this.resourcePath);
+
 	this.cacheable && this.cacheable();
 	var query = loaderUtils.parseQuery(this.query);
 	var attributes = ["img:src"];
