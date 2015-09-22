@@ -1,3 +1,11 @@
+## This is a react loader based on html-loader with some additional features
+usage:
+```html
+<div class="header">
+    {{include:../partial/banner.html}}
+</div>
+```
+
 # html loader for webpack
 
 Exports HTML as string. HTML is minimized when the compiler demands.
