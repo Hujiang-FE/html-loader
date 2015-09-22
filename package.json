@@ -1,5 +1,5 @@
 {
-  "name": "template-html-loader",
+  "name": "nested-html-loader",
   "version": "0.3.0",
   "author": "Daniel @hujiang.com",
   "description": "html loader module for webpack with additional fetures",
