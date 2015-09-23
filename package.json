@@ -1,6 +1,6 @@
 {
   "name": "nested-html-loader",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "Daniel @hujiang.com",
   "description": "html loader module for webpack with additional fetures",
   "dependencies": {
