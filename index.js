@@ -15,10 +15,12 @@ function randomIdent() {
 
 module.exports = function(content) {
 	//preprocess html with nested html file link.
-	content = preprocessNestedHtml(content, this.resourcePath);
 
 	this.cacheable && this.cacheable();
 	var query = loaderUtils.parseQuery(this.query);
+
+	content = preprocessNestedHtml(content, this.resourcePath, query);
+
 	var attributes = ["img:src"];
 	if(query.attrs !== undefined) {
 		if(typeof query.attrs === "string")
